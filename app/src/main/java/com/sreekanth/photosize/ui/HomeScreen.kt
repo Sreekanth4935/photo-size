@@ -49,14 +49,14 @@ fun HomeScreen() {
             ) {
                 Icon(
                     imageVector = Icons.Filled.PhotoSizeSelectLarge,
-                    contentDescription = "Photo Size",
+                    contentDescription = "Photo Size KB Tool",
                     modifier = Modifier.size(48.dp),
                     tint = MaterialTheme.colorScheme.primary,
                 )
             }
             Spacer(modifier = Modifier.height(24.dp))
             Text(
-                text = "Photo Size",
+                text = "Photo Size KB Tool",
                 style = MaterialTheme.typography.headlineLarge,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onSurface,
