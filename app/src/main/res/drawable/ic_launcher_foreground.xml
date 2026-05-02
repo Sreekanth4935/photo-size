@@ -1,47 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Photo Size KB Tool: Photo with bold diagonal double-arrow overlaid -->
+<!-- Photo Size KB Tool: Photo being compressed with squeeze arrows -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Photo frame background -->
+    <!-- Photo card (centered) -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M34,34 L74,34 Q76,34 76,36 L76,74 Q76,76 74,76 L34,76 Q32,76 32,74 L32,36 Q32,34 34,34 Z" />
+        android:pathData="M36,34 L72,34 Q74,34 74,36 L74,72 Q74,74 72,74 L36,74 Q34,74 34,72 L34,36 Q34,34 36,34 Z" />
 
     <!-- Inner photo area -->
     <path
-        android:fillColor="#A5D6A7"
-        android:pathData="M36,38 L72,38 L72,72 L36,72 Z" />
+        android:fillColor="#C8E6C9"
+        android:pathData="M38,38 L70,38 L70,70 L38,70 Z" />
 
-    <!-- Mountain -->
+    <!-- Mountain in photo -->
     <path
         android:fillColor="#1B5E20"
-        android:pathData="M36,72 L48,54 L56,64 L64,50 L72,72 Z" />
+        android:pathData="M38,70 L48,54 L56,62 L64,48 L70,70 Z" />
 
     <!-- Sun -->
     <path
         android:fillColor="#FFEB3B"
-        android:pathData="M64,44 m-3.5,0 a3.5,3.5 0,1 1,7 0 a3.5,3.5 0,1 1,-7 0" />
+        android:pathData="M63,44 m-3,0 a3,3 0,1 1,6 0 a3,3 0,1 1,-6 0" />
 
-    <!-- Bold diagonal double-arrow (center, top-left to bottom-right) -->
-    <!-- Arrow line -->
-    <path
-        android:fillColor="@android:color/transparent"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="4"
-        android:strokeLineCap="round"
-        android:pathData="M40,40 L68,68" />
-
-    <!-- Top-left arrow head -->
+    <!-- Top squeeze arrow pointing DOWN (compress from top) -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M36,36 L48,36 L48,40 L40,40 L40,48 L36,48 Z" />
+        android:pathData="M46,28 L62,28 L54,38 Z" />
 
-    <!-- Bottom-right arrow head -->
+    <!-- Bottom squeeze arrow pointing UP (compress from bottom) -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M72,72 L60,72 L60,68 L68,68 L68,60 L72,60 Z" />
+        android:pathData="M46,80 L62,80 L54,70 Z" />
+
+    <!-- Left squeeze arrow pointing RIGHT -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,46 L28,62 L38,54 Z" />
+
+    <!-- Right squeeze arrow pointing LEFT -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M80,46 L80,62 L70,54 Z" />
 </vector>
