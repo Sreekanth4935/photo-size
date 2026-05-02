@@ -4,7 +4,7 @@
 *Last updated: 2026-05-02*
 *Research pass: 2026-05-02*
 
-This plan turns the starter project into a fast photo/signature resize tool for exams, job forms, admissions, and government portals. This is one of the strongest first-release candidates because it has simple offline value and clear search intent.
+This plan turns the starter project into a fast exam/form output validator for photos and signatures, not a generic cropper. This is one of the strongest first-release candidates because it has simple offline value, clear search intent, and a concrete success state: the output matches the selected pixel and KB rules.
 
 ## Agent Execution Contract
 
@@ -58,7 +58,7 @@ Important policy and platform constraints:
 
 One-line promise:
 
-Resize and compress exam photos/signatures to exact pixel and KB limits offline.
+Prepare exam and form photos/signatures offline with guided presets, exact pixels, target KB compression, validation badges, and save/share output.
 
 Primary users:
 
@@ -70,14 +70,14 @@ Primary users:
 
 ## Release Strategy
 
-- V1: Single-image photo/signature resize, crop, exact pixel size, target KB compression, save/share.
-- V1.1: Common presets and better result validation.
+- V1: Choose photo/signature preset, crop, exact pixel resize, target KB compression, validation badges, save/share.
+- V1.1: Expanded country/exam preset packs and stronger result validation.
 - V1.2: AdMob Native Advanced test then production ads.
 - V2: Batch resize and premium preset packs/ad-free upgrade.
 
 Subscription caution:
 
-This app is mostly a utility. Start with ads plus optional one-time lifetime unlock. Subscription should wait unless the app gets recurring value such as regularly updated country/exam preset libraries.
+This app should be monetized as a focused output-prep tool, not as a generic cropper. Start with safe ads plus optional one-time lifetime unlock. Subscription should wait unless the app gets recurring value such as regularly updated country/exam preset libraries.
 
 ## Monetization Plan
 
@@ -126,6 +126,7 @@ Implementation requirements:
 - No landing page
 - Clear before/after file size comparison
 - Output validation badges: width, height, file size, format
+- The result screen is the hero: it must make pass/fail constraints obvious without implying official acceptance
 - Simple language: "Photo", "Signature", "Custom"
 
 ## Day-by-Day Plan
@@ -142,7 +143,8 @@ Daily definition of done:
 ### Day 1: Product Grounding
 
 - [ ] Update product docs for exam/form photo resize.
-- [ ] Define v1 scope: single image, crop, resize, compress, save/share.
+- [ ] Define v1 scope: photo/signature presets, single image, crop, exact resize, target KB compression, validation badges, save/share.
+- [ ] Document why this is not a cropper: preset-led constraints, output validation, and exam/form-safe wording.
 - [ ] Add privacy note: selected image only, local processing.
 - [ ] Confirm no broad storage permissions.
 
