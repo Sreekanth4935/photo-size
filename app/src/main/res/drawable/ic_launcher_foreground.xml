@@ -1,64 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Photo Size KB Tool: Photo frame with diagonal resize arrow - REDESIGNED compact -->
+<!-- Photo Size KB Tool: Photo with bold diagonal double-arrow overlaid -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Photo frame outer (centered, smaller) -->
+    <!-- Photo frame background -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M30,30 L70,30 Q72,30 72,32 L72,68 Q72,70 70,70 L30,70 Q28,70 28,68 L28,32 Q28,30 30,30 Z" />
+        android:pathData="M34,34 L74,34 Q76,34 76,36 L76,74 Q76,76 74,76 L34,76 Q32,76 32,74 L32,36 Q32,34 34,34 Z" />
 
-    <!-- Photo inner area -->
+    <!-- Inner photo area -->
     <path
-        android:fillColor="#C8E6C9"
-        android:pathData="M32,34 L68,34 L68,66 L32,66 Z" />
+        android:fillColor="#A5D6A7"
+        android:pathData="M36,38 L72,38 L72,72 L36,72 Z" />
 
-    <!-- Mountain shape inside photo -->
+    <!-- Mountain -->
     <path
-        android:fillColor="#2E7D32"
-        android:pathData="M32,66 L44,48 L52,58 L60,46 L68,66 Z" />
+        android:fillColor="#1B5E20"
+        android:pathData="M36,72 L48,54 L56,64 L64,50 L72,72 Z" />
 
-    <!-- Sun in photo -->
+    <!-- Sun -->
     <path
-        android:fillColor="#FFC107"
-        android:pathData="M60,40 m-3.5,0 a3.5,3.5 0,1 1,7 0 a3.5,3.5 0,1 1,-7 0" />
+        android:fillColor="#FFEB3B"
+        android:pathData="M64,44 m-3.5,0 a3.5,3.5 0,1 1,7 0 a3.5,3.5 0,1 1,-7 0" />
 
-    <!-- Resize arrow: diagonal line bottom-right -->
-    <path
-        android:fillColor="@android:color/transparent"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:pathData="M60,60 L78,78" />
-
-    <!-- Resize arrow head (bottom-right, L shape) -->
+    <!-- Bold diagonal double-arrow (center, top-left to bottom-right) -->
+    <!-- Arrow line -->
     <path
         android:fillColor="@android:color/transparent"
         android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
+        android:strokeWidth="4"
         android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:pathData="M78,72 L78,78 L72,78" />
+        android:pathData="M40,40 L68,68" />
 
-    <!-- Resize arrow: diagonal line top-left -->
+    <!-- Top-left arrow head -->
     <path
-        android:fillColor="@android:color/transparent"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:pathData="M48,48 L30,30" />
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,36 L48,36 L48,40 L40,40 L40,48 L36,48 Z" />
 
-    <!-- Resize arrow head (top-left, L shape) -->
+    <!-- Bottom-right arrow head -->
     <path
-        android:fillColor="@android:color/transparent"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:pathData="M30,36 L30,30 L36,30" />
+        android:fillColor="#FFFFFF"
+        android:pathData="M72,72 L60,72 L60,68 L68,68 L68,60 L72,60 Z" />
 </vector>
